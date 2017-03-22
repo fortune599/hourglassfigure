@@ -26,7 +26,7 @@ def add_curve( points, x0, y0, x1, y1, x2, y2, x3, y3, step, curve_type ):
     ysta = y0
     while (t < 1.01):
         xsto = co_x[0] * (t**3) + co_x[1] * (t**2) + co_x[2] * t + co_x[3]
-        ysto = co_x[0] * (t**3) + co_x[1] * (t**2) + co_x[2] * t + co_x[3]
+        ysto = co_y[0] * (t**3) + co_y[1] * (t**2) + co_y[2] * t + co_y[3]
         z = 0
         add_edge(points, xsta, ysta, z, xsto, ysto, z)
 
